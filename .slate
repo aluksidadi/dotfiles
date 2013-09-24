@@ -1,0 +1,50 @@
+# Configs
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config focusCheckWidthMax 3000
+
+# Monitor Aliases
+alias mon-laptop      1680x1050
+alias mon-dell 3840x1200
+
+# Position Aliases
+alias 1-left-half  move screenOriginX;screenOriginY                               screenSizeX/2;screenSizeY       ${mon-laptop}
+alias 1-right-half move screenOriginX+screenSizeX/2;screenOriginY                 screenSizeX/2;screenSizeY       ${mon-laptop}
+
+# 2 Monitor layout
+#layout 2monitors 'Skype':REPEAT                           ${1-right-half}
+#layout 2monitors 'Mail':REPEAT                            ${1-left-half}
+
+#layouts
+default 2monitors resolutions:${mon-laptop};${mon-dell}
+default 1monitor  resolutions:${mon-laptop}
+
+#grid
+bind esc:ctrl grid
+
+#activate snapshots
+bind 1:fn;ctrl activate-snapshot snapshot1
+bind 2:fn;ctrl activate-snapshot snapshot2
+bind 3:fn;ctrl activate-snapshot snapshot3
+bind 4:fn;ctrl activate-snapshot snapshot4
+bind 5:fn;ctrl activate-snapshot snapshot5
+bind 6:fn;ctrl activate-snapshot snapshot6
+
+#take snapshots
+bind 1:fn;ctrl;alt snapshot snapshot1 save-to-disk;stack
+bind 2:fn;ctrl;alt snapshot snapshot2 save-to-disk;stack
+bind 3:fn;ctrl;alt snapshot snapshot3 save-to-disk;stack
+bind 4:fn;ctrl;alt snapshot snapshot4 save-to-disk;stack
+bind 5:fn;ctrl;alt snapshot snapshot5 save-to-disk;stack
+bind 6:fn;ctrl;alt snapshot snapshot6 save-to-disk;stack
+
+#delete snapshots
+bind 1:fn;ctrl;alt;cmd delete-snapshot snapshot1 all
+bind 2:fn;ctrl;alt;cmd delete-snapshot snapshot2 all
+bind 3:fn;ctrl;alt;cmd delete-snapshot snapshot3 all
+bind 4:fn;ctrl;alt;cmd delete-snapshot snapshot4 all
+bind 5:fn;ctrl;alt;cmd delete-snapshot snapshot5 all
+bind 6:fn;ctrl;alt;cmd delete-snapshot snapshot6 all
