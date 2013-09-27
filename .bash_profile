@@ -24,3 +24,10 @@ export PS1="\u \W\$ "
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=/Users/aluksidadi/Projects/go
+export PATH=$PATH:$GOPATH/bin
+
+alias projects="cd /Users/aluksidadi/Projects"
+alias godir="cd /Users/aluksidadi/Projects/go"
