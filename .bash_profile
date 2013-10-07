@@ -4,6 +4,7 @@ export PATH=$PATH:$JRE_HOME/bin
 export MAVEN_OPTS="-XX:PermSize=65M -XX:MaxPermSize=512M -Xms500M -Xmx2000M -Xdebug -Xrunjdwp:transport=dt_socket,address=8989,server=y,suspend=n"
 export MULE_HOME="/Users/aluksidadi/Projects/veeva/mule-standalone-3.3.0"
 export PATH=$PATH:/usr/local/mysql/bin
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 # expose to OSX GUI
 launchctl setenv MULE_HOME $MULE_HOME
