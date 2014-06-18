@@ -1,6 +1,6 @@
 [user]
 	name = Alexander Luksidadi
-	email = alexander.luksidadi@veeva.com
+	email = alexander.luksidadi@github.com
 [core]
 	excludesfile = /Users/aluksidadi/.gitignore_global
 [difftool "sourcetree"]
